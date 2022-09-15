@@ -1,0 +1,162 @@
+.body{
+	/*
+	display: grid; 
+	grid-template-columns:repeat(1, 1fr);
+	grid-auto-rows:auto;
+	 grid-column-gap: 0px; 
+	 grid-row-gap: 0px; 
+*/
+}
+
+/* section planes*/
+
+.section-planes{
+
+	display:grid;
+	grid-auto-flow:dense;
+	grid-auto-rows:auto;
+	grid-template-columns:repeat(auto-fill,minmax(min(100%,25rem),1fr));
+	grid-column-gap:6px;
+	grid-row-gap:6px;
+
+}
+
+/*section icono servicio*/
+.servicios-section-iconos{
+ 
+ background: white;
+}
+
+/**/
+.section-ico{
+
+	display:grid;
+	grid-auto-flow:dense;
+	grid-auto-rows:auto;
+	grid-template-columns:repeat(auto-fill,minmax(min(100%,25rem),1fr));
+	grid-column-gap:6px;
+	grid-row-gap:6px;
+
+}
+
+.ico-servicio{
+
+	text-align: center;
+	border-radius: 6px;
+	border: 10px grey;
+	padding: 20px;
+
+-webkit-box-shadow: 10px 10px 5px -5px rgba(148,148,148,1);
+-moz-box-shadow: 10px 10px 5px -5px rgba(148,148,148,1);
+box-shadow: 10px 10px 5px -5px rgba(148,148,148,1);
+
+
+}
+.ico-servicio>span{font-size:35px; color: #52C2EE;}
+.ico-servicio>p{font-size:20px; color: #464646; font-weight: bold;}
+
+/*diseno*/
+
+.Adaptable-section-iconos{
+ padding: 20px;
+ background:#838383;
+}
+
+
+.Adaptable-icos{
+
+display: grid;
+grid-template-columns:repeat(auto-fill,minmax(min(100%,15rem),1fr));
+grid-template-rows: 1fr;
+grid-column-gap: 0px;
+grid-row-gap: 0px;
+grid-auto-flow:dense;
+grid-auto-rows:auto;
+padding: 15px;
+
+}
+
+.Adaptable-section-iconos>h2{
+	text-align: center;
+	font-size: 30px ;
+	color: white;
+}
+
+
+.icon{
+	font-size: 90px;
+}
+
+.ico-Adaptable{
+	color: white;
+	font-size: 30px ;
+	text-align: center;
+	border-radius: 9px;
+	border: 10px grey;
+	padding: 20px;
+	background:#8F8F8F;
+	box-shadow: 1px 15px 35px -6px rgba(220,220,220,0.94);
+	-webkit-box-shadow: 1px 15px 35px -6px rgba(220,220,220,0.94);
+	-moz-box-shadow: 1px 15px 35px -6px rgba(220,220,220,0.94);
+	/**/
+	margin: 3px;
+}
+
+.ico-Adaptable:hover{
+	margin: 8px;
+}
+.ico-Adaptable:hover span{
+	/*color:#E3E501;*/
+
+ text-shadow: 0 0 10px rgba(255,255,255,1) , 0 0 20px rgba(255,255,255,1) , 0 0 30px rgba(255,255,255,1) , 0 0 40px #00ffff , 0 0 70px #00ffff , 0 0 80px #00ffff , 0 0 100px #00ffff ;
+}
+
+.ico-Adaptable:hover p{
+	/*color:#E3E501;*/
+	 text-shadow: 0 0 10px rgba(255,255,255,1) , 0 0 20px rgba(255,255,255,1) , 0 0 30px rgba(255,255,255,1) , 0 0 40px #00ffff , 0 0 70px #00ffff , 0 0 80px #00ffff , 0 0 100px #00ffff ;}
+
+	 /*diseno */
+
+.section-ProcesoDev{
+	display:grid;
+	grid-auto-flow:dense;
+	grid-auto-rows:auto;
+	grid-template-columns:repeat(3,0.5fr);
+	
+	grid-gap: 6px;
+
+}
+
+.Section-ProcesoDev-Title{
+	text-align: center;
+	font-size: 40px;
+}
+
+.ico-ProcesoDev{
+	text-align: center;
+	/*background: #5E5E5E;*/
+	background:rgba(0, 41, 67, 0.46);
+	text-shadow: 4px 2px 17px rgba(255,255,255,0.6);
+	padding: 15px;
+
+	border-radius:11px;
+	width: auto;
+}
+
+.ico-ProcesoDev>.icon{
+	color: #F0F0F0;
+	font-size: 50px;
+}
+
+
+.Title-ProcesoDev-Card{
+	font-size: 25px;
+
+}
+
+.Text-ProcesoDev{
+	margin: 15px;
+	margin-top: -4px;
+	text-align:center;
+	line-height: 1.6;
+}

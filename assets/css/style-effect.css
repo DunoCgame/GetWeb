@@ -1,0 +1,139 @@
+@media(max-width: 377px) { 
+
+.header{
+
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+
+  }
+
+  .menu-item-link{
+    text-decoration: none;
+    font-size: 20px ;
+    color: var(--menu-color);
+  }
+
+}
+
+.menu-effect a {
+  position: relative;
+  display: block;
+  padding: 5px;
+}
+
+.menu-effect a::before {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background: linear-gradient(to right, #b47dcd, #e878a2, #eb85ab);
+  z-index: 1;
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform 0.5s ease-in-out;
+}
+
+.menu-effect a:hover::before {
+  transform: scaleX(1);
+}
+
+/* ANIMATIONS
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+.menu-effect[data-animation="center"] a::before {
+  transform-origin: center;
+}
+
+/*efectos icono servicio
+
+:root {
+  
+  --transition-duration: 0.3s;
+  --transition-delay: 0.2s;
+
+}
+
+
+
+
+.menu div {
+  position: relative;
+  display: block;
+  padding: 10px;
+}
+
+.menu .border {
+  position: absolute;
+  left: 0;
+  background: #FF0E00;
+  border: 0.1px #FF0E00 solid;
+  transition: transform var(--transition-duration) ease-in-out;
+}
+
+.menu .border-top,
+.menu .border-bottom {
+  width: 100%;
+  height: 1px;
+  transform: scaleX(0);
+}
+
+.menu .border-left,
+.menu .border-right {
+  width: 1px;
+  height: 100%;
+  transform: scaleY(0);
+}
+
+.menu .border-top,
+.menu .border-left,
+.menu .border-right {
+  top: 0;
+}
+
+.menu .border-bottom {
+  bottom: 0;
+  transform-origin: bottom right;
+}
+
+.menu .border-top {
+  transform-origin: top left;
+}
+
+.menu .border-left {
+  transform-origin: bottom left;
+}
+
+.menu .border-right {
+  left: auto;
+  right: 0;
+  transform-origin: top right;
+}
+
+.menu div:hover .border-top, .menu div:hover .border-bottom {
+  transform: scaleX(1);
+}
+
+.menu div:hover .border-left, .menu div:hover .border-right {
+  transform: scaleY(1);
+}
+
+.menu div:hover .border-right {
+  transition-delay: var(--transition-delay);
+}
+
+.menu div:hover .border-bottom {
+  transition-delay: calc(var(--transition-delay) * 2);
+}
+
+.menu div:hover .border-left {
+  transition-delay: calc(var(--transition-delay) * 3);
+}
+
+.menu[data-animation="diagonal"] div:hover [class^=border]{
+  transition-delay: 0s;
+}
+*/
